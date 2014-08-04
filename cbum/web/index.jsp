@@ -8,7 +8,7 @@
 </head>
 <body>
 <% 
-response.sendRedirect("ReportManager?datentime=10:48");
+response.sendRedirect("ReportManager?typ=con&dir=out&frm=xml&app=2&usr=myudelson&grp=200721&lev=application&dom=c_programming&datentime=1/13/14 11:21");
 %>
 </body>
 </html>

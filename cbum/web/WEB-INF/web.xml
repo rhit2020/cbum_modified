@@ -80,15 +80,6 @@
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>conceptReportSimple</servlet-name>
-		<jsp-file>/WEB-INF/conceptReportSimple.jsp</jsp-file>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>conceptReportSimple</servlet-name>
-		<url-pattern>/conceptReportSimple</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
 		<servlet-name>lastTimeAccessed</servlet-name>
 		<jsp-file>/WEB-INF/lastTimeAccessed.jsp</jsp-file>
 	</servlet>
