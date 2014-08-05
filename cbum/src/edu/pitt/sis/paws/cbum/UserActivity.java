@@ -97,12 +97,23 @@ public class UserActivity extends Item2
 			DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 			long ms_passed = 0;
 			try
-			{
+			{				
 				Date old_date = df.parse(user.cached_datentime);
 				Date new_date = df.parse(date_n_time);
 				ms_passed = new_date.getTime() - old_date.getTime();
 			}
-			catch (Exception e) { e.printStackTrace(System.out); }
+			catch (Exception e) { 
+				//change start
+				//@author: roya - goal: handling format yyyy-MM-dd HH:mm:ss
+				try
+				{	
+					DateFormat df2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+					Date old_date = df2.parse(user.cached_datentime);
+					Date new_date = df2.parse(date_n_time);
+					ms_passed = new_date.getTime() - old_date.getTime();
+				}catch (Exception ex) { ex.printStackTrace(System.out);}
+				//change end				
+			}
 			double new_score = 0.0;
 			
 			if(ms_passed>6000 && ms_passed<=65000)
