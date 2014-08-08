@@ -6,10 +6,11 @@
 	<classpathentry kind="lib" path="web/WEB-INF/lib/icu4j_3_4.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/iri.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/jena.jar"/>
-	<classpathentry kind="lib" path="web/WEB-INF/lib/paws-core.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/sedona-report.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/sedona-vocab.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/paws-cbum.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/paws-core.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
