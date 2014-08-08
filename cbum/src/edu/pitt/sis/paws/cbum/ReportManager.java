@@ -96,9 +96,9 @@ public class ReportManager extends HttpServlet
 		//start change
 		//@author: roya - Goal: considering concept knowledge report at the given time rather than the current system time.
 		String datentime = request.getParameter(PAR_REPORT_DATENTIME);
-		System.out.println("######ReportManager:before "+getServletContext().getAttribute(ServerDaemon.CONTEXT_CUTOUT_DATE));
+		System.out.println("Report:before "+getServletContext().getAttribute(ServerDaemon.CONTEXT_CUTOUT_DATE));
 		getServletContext().setAttribute(ServerDaemon.CONTEXT_CUTOUT_DATE,datentime);
-		System.out.println("######ReportManager:after "+getServletContext().getAttribute(ServerDaemon.CONTEXT_CUTOUT_DATE));
+		System.out.println("Report:after "+getServletContext().getAttribute(ServerDaemon.CONTEXT_CUTOUT_DATE));
 		//end change
 		ServerDaemon sd = ServerDaemon.getInstance(getServletContext());
 
