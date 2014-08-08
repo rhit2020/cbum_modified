@@ -548,7 +548,7 @@ System.out.println("mem.free : " + Runtime.getRuntime().freeMemory());
 			//TODO change by roya start
 			//String s_cutout_date = context.getInitParameter(ServerDaemon.CONTEXT_CUTOUT_DATE); //ORIGINAL CODE
 			String s_cutout_date = (String) context.getAttribute(ServerDaemon.CONTEXT_CUTOUT_DATE);
-			System.out.println("SOURCE: "+context.getAttribute(ServerDaemon.CONTEXT_CUTOUT_DATE));
+//			System.out.println("SOURCE: "+context.getAttribute(ServerDaemon.CONTEXT_CUTOUT_DATE));
 			//change end
 			String cutout_date = (s_cutout_date != null && s_cutout_date.length() >0 )?s_cutout_date:null;
 			if(cutout_date!=null)
